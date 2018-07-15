@@ -8,7 +8,7 @@ Example
 ```
 | Header One     | Header Two     | Header Two     |
 | :------------- | :------------- | :------------- |
-| GET            | `/item/chair`  | Item Two       |
+| GET            | `/item/chair`  |        |
 | :------------- | :------------- | :------------- |
 | POST           | `/item/chair`  | Item Two       |
 | :------------- | :------------- | :------------- |
@@ -27,3 +27,6 @@ Example
   </thead>
   <tbody></tbody>
 </table>
+
+Stateless
+One reqt can't depend on other requests.
