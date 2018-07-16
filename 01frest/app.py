@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 # jsonify() takes a dict and converts it to a JSON
 
 app = Flask(__name__)
@@ -16,6 +16,9 @@ stores = [
     }
 ]
 
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/store', methods=['POST'])
 def create_store():
